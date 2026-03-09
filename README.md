@@ -25,4 +25,4 @@
 
 ## 说明
 
-本仓库的文档部分通过 [Claude Code](https://claude.ai/claude-code) 生成。
+本仓库文档的部分内容通过 [Claude Code](https://claude.ai/claude-code) 生成。
