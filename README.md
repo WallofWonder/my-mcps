@@ -22,3 +22,7 @@
 - **运行时**：Python 3.12
 - **MCP 框架**：[FastMCP](https://github.com/jlowin/fastmcp)
 - **部署方式**：Docker（stdio 传输层）
+
+## 说明
+
+本仓库的文档部分通过 [Claude Code](https://claude.ai/claude-code) 生成。
