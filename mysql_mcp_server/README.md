@@ -69,6 +69,25 @@ claude mcp add mysql-mcp-server -s project -- \
   mysql-mcp-server
 ```
 
+#### 访问 docker 网络下的 MySQL 容器
+
+需要在命令中额外加上 `--network <network>`
+
+`DB_HOST` 配置为 MySQL 容器的名称
+
+示例（访问在 `network1` 网络中名为 `my_mysql` 的 MySQL 容器）：
+```bash
+claude mcp add mysql-mcp-server -s project -- \
+  docker run --rm -i \
+  -e DB_HOST=my_mysql \
+  -e DB_PORT=3306 \
+  -e DB_USER=<user> \
+  -e DB_PASSWORD=<password> \
+  -e DB_NAME=<database> \
+  --network network1 \
+  mysql-mcp-server
+```
+
 ## 项目结构
 
 ```
