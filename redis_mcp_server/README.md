@@ -19,6 +19,8 @@
 | `get_keyspace_stats` | 获取各数据库的 key 数量、过期 key 数等统计信息           | 无                                                          |
 
 > **安全说明**：本服务仅提供只读操作，不暴露任何写入、删除或修改命令，确保 Redis 数据安全。
+> 
+> Redis 官方提供了全功能的 MCP，详见 https://redis.io/docs/latest/integrate/redis-mcp/
 
 ## 环境变量
 
